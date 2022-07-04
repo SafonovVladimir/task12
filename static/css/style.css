@@ -1,0 +1,48 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    /*background-image: url('../img/621676_original.jpg');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.form-wrap {
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 0px 6px 20px #397dde, 0px 51px 89px rgba(19, 10, 11, 0.5);
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+.card-body {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+}
+
+@media (min-width: 481px) {
+    .card {
+        max-width: 1000px;
+        min-width: 700px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 1000px;
+    }
+}
