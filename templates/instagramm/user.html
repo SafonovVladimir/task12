@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>{{ user.full_name }}</title>
+{% endblock %}
+
+{% block content %}
+    <h1>{{ user.user }}
+    <a href="{{ user.user }}/edit">Edit profile</a></h1>
+    <br>
+    <div><h2>Full name: {{ user.full_name }} </h2></div>
+    <div><em>Birthday: {{ user.birthday }}</em></div>
+    <div><p>E-mail: {{ user.e_mail }}</p></div>
+    <div><p>Gender: {{ user.gender }}</p></div>
+    <div><p>Biography: {{ user.bio }}</p></div>
+    <div><p>Photo: {{ user.photo }}</p></div>
+{% endblock %}

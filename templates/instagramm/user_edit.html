@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>{{ user.full_name }}</title>
+{% endblock %}
+
+{% block content %}
+    <form method="POST" name="edit_profile">
+        <h1>{{ user.user }}</h1>
+        <div><label>Full name:</label><label><textarea id="full_name">{{ user.full_name }}</textarea></label></div>
+        <br>
+        <div><label>Birthday:</label><label><textarea id="birthday">{{ user.birthday }}</textarea></label></div>
+        <br>
+        <div><label>E-mail:</label><label><textarea id="e_mail">{{ user.e_mail }}</textarea></label></div>
+        <br>
+        <div><label>Gender:</label><label><textarea id="gender">{{ user.gender }}</textarea></label></div>
+        <br>
+        <div><label>Biography:</label><label><textarea id="bio">{{ user.bio }}</textarea></label></div>
+        <br>
+        <div><label>Photo:</label><label><textarea id="photo">{{ user.photo }}</textarea></label></div>
+        <br>
+        <div><button type="button">Submit</button></div>
+    </form>
+{% endblock %}
